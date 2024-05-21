@@ -1,0 +1,13 @@
+{
+    "functions": {
+      "api": {
+        "handler": "index.js",
+        "memory": 512
+      }
+    },
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "dest": "/index.js" }
+    ]
+  }
+  
